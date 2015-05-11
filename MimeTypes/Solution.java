@@ -3,8 +3,20 @@ import java.io.*;
 import java.math.*;
 
 /**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
+ * To quickly use input from input.txt files you can use redirecting 
+ * and piping from the command like, for example:
+ * 
+ * redirecting from a file to standard input use this command:
+ * e.g. java Solution < input1.txt
+ * 
+ * redirect input from text file and pipe the out to a text file
+ * e.g. java Solution < input1.txt | tee output.txt
+ * 
+ * the above command redirects input from input1.txt into the Solution
+ * program which reads the input with Scanner in = new Scanner(System.in);
+ * the | tee output.txt will pipe the output to the output.txt file, if file
+ * does not exist it will be created.
+ * 
  **/
 class Solution {
 
