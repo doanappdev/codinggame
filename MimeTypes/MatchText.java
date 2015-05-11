@@ -1,4 +1,8 @@
 /*
+ * MatchText can be used to compare the values from two text files.
+ * For the MimeTypes problem input size is 10000. To quickly check
+ * your results with the expected output use this class.
+ *
  * Redirecting and Piping
  * redirecting from a file to standard input:
  * e.g. java Test2 < data.t
@@ -7,7 +11,7 @@
  * e.g. java Test1 > data.txt 
  *
  * piping the output of one program to the input of another
- * e.g. java Test1 | java Test2
+ * e.g. java Test1 | tee java Test2
  *
  */
 
@@ -17,8 +21,8 @@ import java.math.*;
 
 public class MatchText {
 	static private Scanner in1, in2;
-	static String file1 = "correctResult5.txt";
-	static String file2 = "output5a.txt";
+	static String file1 = "correctResult5.txt";	// change file name as required
+	static String file2 = "output5a.txt";		// change file name as required
 	
 	public static void main(String[] args) {
 		LinkedList<String> listData1 = new LinkedList<>();
